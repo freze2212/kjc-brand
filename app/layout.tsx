@@ -15,6 +15,9 @@ export const metadata: Metadata = {
   keywords: ["thương hiệu", "brand", "website", "chuyên nghiệp"],
   authors: [{ name: SITE_CONFIG.name }],
   creator: SITE_CONFIG.name,
+  icons: {
+    icon: "/fav-kjc.png",
+  },
   openGraph: {
     type: "website",
     locale: "vi_VN",

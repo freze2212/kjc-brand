@@ -1,7 +1,7 @@
 export const SITE_CONFIG = {
-  name: "Thương Hiệu",
+  name: "KJC - Mỗi Bước Đi, Mỗi Ý Tưởng ",
   description: "Trang thương hiệu chuyên nghiệp với nhiều năm kinh nghiệm",
-  url: "https://thuonghieu.com",
+  url: "https://kjc.com",
   ogImage: "/og-image.jpg",
 };
 
