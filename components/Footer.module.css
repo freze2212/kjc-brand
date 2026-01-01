@@ -1,0 +1,706 @@
+/* Footer.module.css */
+.footer {
+  color: white;
+  position: relative;
+  background-image: url("/footer/background-footer.webp");
+  background-size: cover;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+}
+
+/* Footer is not fixed on iPad/Tablet - it scrolls with content */
+
+.footerContent {
+  max-width: 1704px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header Title (Cập nhật: relative cho 2 ảnh FooterLeft/Right) */
+.headerTitle {
+  position: relative;
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* Thêm padding cho Desktop để tránh ảnh đè lên tiêu đề */
+  padding: 0 250px;
+}
+
+.mainTitle {
+  font-size: 32px;
+  font-weight: 700;
+  color: #0095f9;
+  margin: 0 0 20px 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.titleFirstLine {
+  display: inline;
+  white-space: nowrap;
+}
+
+.titleBreak {
+  display: inline;
+}
+
+/* decorativeImages không còn được sử dụng */
+.decorativeImages {
+  display: none;
+}
+
+/* Footer Left and Right Images cho Mobile (trong headerTitle) */
+.footerLeftImageMobile,
+.footerRightImageMobile {
+  position: absolute;
+  z-index: 1;
+  pointer-events: none;
+  width: 200px;
+  height: auto;
+  object-fit: contain;
+  display: none; /* Ẩn ở Desktop */
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.footerLeftImageMobile {
+  left: 0;
+}
+
+.footerRightImageMobile {
+  right: 0;
+}
+
+/* Footer Left and Right Images cho Desktop (trong allianceCardsWrapper) */
+.footerLeftImageDesktop,
+.footerRightImageDesktop {
+  position: absolute;
+  z-index: 1;
+  pointer-events: none;
+  width: 400px; /* Kích thước lớn hơn cho Desktop */
+  height: auto;
+  object-fit: contain;
+  display: block;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.footerLeftImageDesktop {
+  left: calc(50% - 800px);
+}
+
+.footerRightImageDesktop {
+  right: calc(50% - 800px);
+}
+
+/* Alliance Cards Wrapper */
+.allianceCardsWrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+/* Alliance Cards */
+.allianceCards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 120px;
+  width: 752px;
+  max-width: 100%;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.allianceCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: fit-content;
+}
+
+.cardContent {
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.cardContent:hover {
+  transform: translateY(-10px);
+}
+
+.cardImage {
+  width: auto;
+  max-width: 170px;
+  height: 145px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+/* Main Content Section */
+.mainContentSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 115px;
+  width: 1704px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+}
+
+.contentLeft {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.collaborateImage {
+  width: 441px;
+  min-width: 441px;
+  height: 280px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.contentCenter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.logoImage {
+  width: 509px;
+  min-width: 509px;
+  height: 90px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.titleImage {
+  width: 591px;
+  min-width: 591px;
+  height: 45px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.contentRight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contentRightImage {
+  width: 441px;
+  min-width: 441px;
+  height: 280px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.descriptionBox {
+  background: transparent;
+  padding: 20px;
+  border-radius: 12px;
+  position: relative;
+}
+
+/* Viền linear gradient góc dưới trái (bottom-left) với SVG path */
+.descriptionBox::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 180px;
+  height: 180px;
+  pointer-events: none;
+  background: linear-gradient(to right, #ff6a00 0%, rgba(255, 106, 0, 0) 100%)
+      left bottom / calc(100% - 12px) 2px no-repeat,
+    linear-gradient(to top, #ff6a00 0%, rgba(255, 106, 0, 0) 100%) left bottom /
+      2px calc(100% - 12px) no-repeat;
+  border-bottom-left-radius: 12px;
+}
+
+/* Viền linear gradient góc trên phải (top-right) với SVG path */
+.descriptionBox::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 180px;
+  height: 180px;
+  pointer-events: none;
+  background: linear-gradient(to left, #ff6a00 0%, rgba(255, 106, 0, 0) 100%)
+      right top / calc(100% - 12px) 2px no-repeat,
+    linear-gradient(to bottom, #ff6a00 0%, rgba(255, 106, 0, 0) 100%) right top /
+      2px calc(100% - 12px) no-repeat;
+  border-top-right-radius: 12px;
+}
+
+.description {
+  font-size: 14px;
+  line-height: 1.8;
+  color: #333;
+  margin: 0;
+  text-align: justify;
+}
+
+/* Footer Bottom */
+.footerBottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  margin-bottom: 30px;
+}
+
+.copyright {
+  font-size: 14px;
+  color: #525252;
+  font-weight: 500;
+}
+
+.socialSection {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.followText {
+  font-size: 14px;
+  color: #525252;
+  font-weight: 500;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 15px;
+}
+
+.socialIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.socialIcon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.socialIcon:hover {
+  transform: translateY(-2px);
+}
+
+/* Responsive Design (Sắp xếp từ lớn đến nhỏ: Desktop-First) */
+
+/* Large Desktop / Widescreen (1280px - 1704px) */
+@media (max-width: 1280px) {
+  .headerTitle {
+      /* Giảm padding ngang để chứa ảnh trang trí */
+      padding: 0 200px; 
+  }
+
+  .mainContentSection {
+      flex-direction: column;
+      gap: 40px;
+      width: 100%;
+  }
+
+  .contentLeft,
+  .contentCenter,
+  .contentRight {
+      width: 100%;
+  }
+
+  .contentCenter {
+      order: 1;
+  }
+
+  .contentLeft {
+      order: 2;
+  }
+
+  .contentRight {
+      order: 3;
+  }
+
+  .footerLeftImageDesktop,
+  .footerRightImageDesktop {
+      width: 350px;
+      height: auto;
+  }
+
+  /* Điều chỉnh vị trí ảnh trang trí cho màn hình 1280px */
+  .footerLeftImageDesktop {
+      left: calc(50% - 750px);
+  }
+
+  .footerRightImageDesktop {
+      right: calc(50% - 750px);
+  }
+
+  .collaborateImage {
+      width: 400px;
+      min-width: auto;
+      height: 220px;
+  }
+
+  .logoImage {
+      width: 480px;
+      min-width: auto;
+      height: 90px;
+  }
+
+  .titleImage {
+      width: 560px;
+      min-width: auto;
+      height: 45px;
+  }
+
+  .contentRightImage {
+      width: 400px;
+      min-width: auto;
+      height: 220px;
+  }
+}
+
+/* Desktop Medium / Tablet Landscape (1024px - 1200px) */
+@media (max-width: 1200px) {
+  .mainTitle {
+      font-size: 28px;
+  }
+
+  .allianceCards {
+      gap: 20px;
+  }
+
+  .mainContentSection {
+      gap: 30px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .headerTitle {
+      /* Giảm padding ngang cho màn hình hẹp hơn */
+      padding: 0 150px;
+  }
+
+  .mainTitle {
+      font-size: 28px;
+  }
+
+  .footerLeftImageDesktop,
+  .footerRightImageDesktop {
+      width: 300px;
+      height: auto;
+  }
+
+  /* Điều chỉnh vị trí ảnh trang trí cho màn hình 1024px */
+  .footerLeftImageDesktop {
+      left: calc(50% - 650px);
+  }
+
+  .footerRightImageDesktop {
+      right: calc(50% - 650px);
+  }
+}
+
+/* Tablet Portrait (992px) */
+@media (max-width: 992px) {
+  .footer {
+      padding: 40px 15px 20px;
+  }
+
+  .mainTitle {
+      font-size: 24px;
+  }
+
+  .allianceCards {
+      width: 100%;
+      max-width: 600px;
+      gap: 40px;
+      margin: 0 auto 30px;
+  }
+
+  .cardImage {
+      max-width: 150px;
+  }
+
+  .mainContentSection {
+      /* Đã được set là column ở 1280px */
+      gap: 40px;
+  }
+
+  .collaborateImage {
+      width: 400px;
+      min-width: auto;
+      height: 220px;
+  }
+
+  .logoImage {
+      width: 480px;
+      min-width: auto;
+      height: 90px;
+  }
+
+  .titleImage {
+      width: 560px;
+      min-width: auto;
+      height: 45px;
+  }
+
+  .contentRightImage {
+      width: 400px;
+      min-width: auto;
+      height: 220px;
+  }
+
+  .contentLeft,
+  .contentCenter,
+  .contentRight {
+      width: 100%;
+  }
+
+  .contentCenter {
+      order: 1;
+  }
+
+  .contentLeft {
+      order: 2;
+  }
+
+  .contentRight {
+      order: 3;
+  }
+
+  .descriptionBox {
+      padding: 20px;
+  }
+
+  .footerBottom {
+      flex-direction: column;
+      gap: 20px;
+      text-align: center;
+  }
+}
+
+/* Mobile Large / Tablet Small (768px) */
+@media (max-width: 768px) {
+  .footer {
+      padding: 20px 10px 15px;
+      background-image: url("/footer/backgrond-footer-mb.webp");
+  }
+
+  .headerTitle {
+      margin-top: 0px;
+      margin-bottom: 30px;
+      /* Điều chỉnh padding để mobile image hiển thị đúng */
+      padding: 0 100px;
+  }
+
+  .mainTitle {
+      font-size: 16px;
+      line-height: 1.3;
+  }
+
+  .titleFirstLine {
+      white-space: nowrap;
+  }
+
+  /* Rule này không cần thiết nếu đã dùng <br /> trong JSX */
+  .titleBreak { 
+      display: block;
+  }
+
+  .allianceCards {
+      margin-top: 5px;
+      max-width: 100%;
+  }
+  .allianceCardsWrapper {
+      padding: 0 16px;
+      margin-bottom: 25px;
+  }
+
+  .cardImage {
+      max-width: 100%;
+      height: 120px;
+  }
+
+  .collaborateImage,
+  .logoImage,
+  .titleImage,
+  .contentRightImage {
+      width: 100%;
+      max-width: 90%;
+      min-width: auto;
+      height: auto;
+  }
+
+  .description {
+      font-size: 12px;
+  }
+
+  .footerBottom {
+      flex-direction: column;
+      gap: 15px;
+  }
+
+  .copyright {
+      order: 2;
+  }
+
+  .socialSection {
+      order: 1;
+      flex-direction: column;
+      gap: 15px;
+  }
+
+  .socialIcon {
+      width: 35px;
+      height: 35px;
+  }
+
+  /* Ẩn Desktop images */
+  .footerLeftImageDesktop,
+  .footerRightImageDesktop {
+      display: none;
+  }
+
+  /* Hiện Mobile images và FIX CẮT ẢNH */
+  .footerLeftImageMobile,
+  .footerRightImageMobile {
+      display: block;
+      width: 90px;
+      height: auto;
+      top: 60%;
+      transform: translateY(-50%);
+  }
+
+  .footerLeftImageMobile {
+      left: 0px;
+  }
+
+  .footerRightImageMobile {
+      right: 0px;
+  }
+}
+
+/* Mobile Medium (480px) */
+@media (max-width: 480px) {
+  .headerTitle {
+      margin-bottom: 25px;
+      /* Giảm padding ngang */
+      padding: 0 80px;
+  }
+  .mainTitle {
+      font-size: 20px;
+      letter-spacing: 0.3px;
+      font-weight: 700;
+      line-height: 1.3;
+  }
+
+  .titleFirstLine {
+      white-space: nowrap;
+  }
+
+  .allianceCards {
+      gap: 10px;
+  }
+  .allianceCardsWrapper {
+      padding: 0 12px;
+      margin-bottom: 20px;
+  }
+
+  .mainContentSection {
+      gap: 30px;
+      padding-bottom: 25px;
+  }
+
+  .descriptionBox {
+      padding: 12px;
+      margin-bottom: 15px;
+  }
+
+  .description {
+      font-size: 13px;
+      line-height: 1.6;
+  }
+
+  .copyright {
+      font-size: 12px;
+  }
+
+  .followText {
+      font-size: 12px;
+  }
+
+  .socialIcons {
+      gap: 15px;
+  }
+
+  .footerBottom {
+      padding-top: 20px;
+      margin-bottom: 20px;
+  }
+
+  .socialIcon {
+      width: 30px;
+      height: 30px;
+  }
+  .cardImage {
+      height: 100px;
+  }
+
+  /* Footer Left and Right Images: Kích thước và vị trí trên Mobile nhỏ */
+  .footerLeftImageMobile,
+  .footerRightImageMobile {
+      width: 120px;
+      height: auto;
+      top: 60%;
+  }
+}
+
+/* Mobile Small (360px) */
+@media (max-width: 360px) {
+  .headerTitle {
+      /* Giảm padding ngang tối đa */
+      padding: 0 50px;
+  }
+
+  .mainTitle {
+      font-size: 15px;
+      letter-spacing: 0.2px;
+      line-height: 1.2;
+  }
+
+  /* Footer Left and Right Images: Kích thước nhỏ nhất */
+  .footerLeftImageMobile,
+  .footerRightImageMobile {
+      width: 100px;
+      height: auto;
+      top: 60%;
+  }
+}
