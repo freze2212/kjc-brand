@@ -30,31 +30,21 @@ function BannerSection() {
       {/* Ảnh text-banner căn giữa, cách lề dưới 20px, overlay trên banner */}
       <div className="absolute bottom-3 md:bottom-5 left-1/2 transform -translate-x-1/2 flex flex-col items-center w-full px-4">
         <div className="relative flex flex-col items-center w-full max-w-[411px] md:max-w-none">
-          {/* Ảnh kjc-juve-white nằm giữa trên ảnh text-banner */}
-          <Image
-            src="/kjc-juve-white.webp"
-            alt="KJC Juve White"
-            width={367}
-            height={100}
-            className="hidden md:block h-auto object-contain z-10"
-            style={{ marginBottom: '40px' }}
-          />
-          {/* Mobile kjc-juve-white */}
-          <Image
-            src="/kjc-juve-white.webp"
-            alt="KJC Juve White Mobile"
-            width={230}
-            height={63}
-            className="md:hidden w-[58vw] max-w-[230px] h-auto object-contain z-10 mb-2"
-          />
           {/* Desktop text-banner */}
-          <Image
-            src="/text-banner.webp"
-            alt="Text Banner"
-            width={1092}
-            height={220}
-            className="hidden md:block h-auto object-contain z-0 max-w-full"
-          />
+          <div className="relative flex flex-col items-center w-full max-w-[411px] md:max-w-none">
+  {/* Layer blur bằng kích thước ảnh */}
+              <div className="absolute flex justify-center w-[1092px] h-[220px] backdrop-blur-[0.1px] bg-[rgb(0_0_0_/_16%)]"></div>
+
+              {/* Desktop text-banner */}
+              <Image
+                src="/text-banner.webp"
+                alt="Text Banner"
+                width={1092}
+                height={220}
+                className="hidden md:block h-auto object-contain relative z-10 max-w-full"
+              />
+            </div>
+
           {/* Mobile text-banner - responsive scale */}
           <Image
             src="/text-banner-mb.webp"
