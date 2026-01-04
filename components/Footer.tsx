@@ -24,22 +24,16 @@ const Footer: React.FC = () => {
       id: "rr88",
       image: "/footer/RR88-link.webp",
       name: "RR88",
-      urlMobile: SHORT_LINKS.rr88_mb,
-      urlDesktop: SHORT_LINKS.rr88_pc,
     },
     {
       id: "xx88",
       image: "/footer/XX88-link.webp",
       name: "XX88",
-      urlMobile: SHORT_LINKS.xx88_mb,
-      urlDesktop: SHORT_LINKS.xx88_pc,
     },
     {
       id: "mm88",
       image: "/footer/MM88-link.webp",
       name: "MM88",
-      urlMobile: SHORT_LINKS.mm88_mb,
-      urlDesktop: SHORT_LINKS.mm88_pc,
     },
   ];
 
@@ -90,12 +84,6 @@ const Footer: React.FC = () => {
           <div className={styles.allianceCards}>
             {partners.map((partner) => (
               <div key={partner.id} className={styles.allianceCard}>
-                <a
-                  href={isMobile ? partner.urlMobile : partner.urlDesktop}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={styles.cardContent}
-                >
                   <Image
                     src={partner.image}
                     alt={partner.name}
@@ -103,7 +91,6 @@ const Footer: React.FC = () => {
                     height={100}
                     className={styles.cardImage}
                   />
-                </a>
               </div>
             ))}
           </div>
