@@ -5,8 +5,8 @@ export const SHORT_LINKS = {
   rr88_pc: "https://rr88.com",
   mm88_mb: "https://mm88.com/mobile",
   mm88_pc: "https://mm88.com",
-  telegram: "https://t.me/kjc",
-  facebook: "https://facebook.com/kjc",
-  tiktok: "https://tiktok.com/@kjc",
+  telegram: "https://t.me/addlist/99-lKL2uuPhlYzY8",
+  facebook: "https://www.facebook.com/XX88OfficialVN",
+  tiktok: "https://www.tiktok.com/@giaitri_xx88_2025",
 };
 
