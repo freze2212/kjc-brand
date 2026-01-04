@@ -33,7 +33,7 @@ function BannerSection() {
           {/* Desktop text-banner */}
           <div className="relative flex flex-col items-center w-full max-w-[411px] md:max-w-none">
   {/* Layer blur bằng kích thước ảnh */}
-              <div className="absolute flex justify-center w-[1092px] h-[220px] backdrop-blur-[0.1px] bg-[rgb(0_0_0_/_16%)]"></div>
+              <div className="absolute flex justify-center md:w-[1092px] md:h-[220px] w-[100%] h-auto backdrop-blur-[0.1px] bg-[rgb(0_0_0_/_16%)]"></div>
 
               {/* Desktop text-banner */}
               <Image
