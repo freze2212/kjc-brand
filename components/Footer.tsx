@@ -35,6 +35,11 @@ const Footer: React.FC = () => {
       image: "/footer/MM88-link.webp",
       name: "MM88",
     },
+    {
+      id: "gg88",
+      image: "/gg88-link.webp",
+      name: "GG88",
+    },
   ];
 
   return (
