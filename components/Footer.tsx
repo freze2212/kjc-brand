@@ -1,24 +1,11 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Image from "next/image";
 import styles from "./Footer.module.css";
 import { SHORT_LINKS } from "@/lib/config";
 
 const Footer: React.FC = () => {
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    const checkMobile = () => {
-      setIsMobile(window.innerWidth <= 768);
-    };
-    
-    checkMobile();
-    window.addEventListener("resize", checkMobile);
-    
-    return () => window.removeEventListener("resize", checkMobile);
-  }, []);
-
   const partners = [
     {
       id: "rr88",
@@ -39,6 +26,11 @@ const Footer: React.FC = () => {
       id: "gg88",
       image: "/gg88-link.webp",
       name: "GG88",
+    },
+    {
+      id: "o8",
+      image: "/logo-o8.png",
+      name: "O8",
     },
   ];
 

@@ -112,8 +112,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 80px;
-  width: 752px;
+  gap: 28px;
+  width: fit-content;
   max-width: 100%;
   margin: 0 auto;
   position: relative;
@@ -394,7 +394,7 @@
   }
 
   .allianceCards {
-      gap: 20px;
+      gap: 28px;
   }
 
   .mainContentSection {
@@ -441,7 +441,7 @@
   .allianceCards {
       width: 100%;
       max-width: 600px;
-      gap: 40px;
+      gap: 18px;
       margin: 0 auto 30px;
   }
 
@@ -627,7 +627,7 @@
   }
 
   .allianceCards {
-      gap: 10px;
+      gap: 6px;
   }
   .allianceCardsWrapper {
       padding: 0 12px;
