@@ -124,26 +124,48 @@ function ResponsiveHero() {
               alt="Circle KJC"
               className="w-full h-full object-contain"
             />
-            {/* MM88 */}
+            {/* Logos - giữ nguyên style/kích thước như ban đầu */}
             <img
               src="/mm88.webp"
               alt="MM88"
-              className="absolute left-[-10px] sm:left-[-20px] top-[10px] sm:top-[26px] w-[50px] xs:w-[60px] sm:w-[131px] h-[56px] xs:h-[70px] sm:h-[150px] object-contain"
+              className="absolute w-[44px] xs:w-[52px] sm:w-[115px] h-[50px] xs:h-[62px] sm:h-[132px] object-contain"
+              style={{
+                left: "38px",
+                top: "58px",
+              }}
             />
-            {/* XX88 */}
             <img
               src="/xx88.webp"
               alt="XX88"
-              className="absolute right-[-10px] sm:right-[-19px] top-[16px] sm:top-[54px] w-[50px] xs:w-[60px] sm:w-[131px] h-[56px] xs:h-[70px] sm:h-[150px] object-contain"
+              className="absolute -translate-y-1/2 w-[44px] xs:w-[52px] sm:w-[115px] h-[50px] xs:h-[62px] sm:h-[132px] object-contain"
+              style={{
+                left: "-10px",
+                top: "60%",
+              }}
             />
-            {/* RR88 */}
             <img
               src="/rr88.webp"
               alt="RR88"
-              className="absolute left-[46%] xs:left-[40%] bottom-[-9px] sm:bottom-[-17px] w-[50px] xs:w-[60px] sm:w-[131px] h-[56px] xs:h-[70px] sm:h-[150px] object-contain"
-              style={{
-                transform: "translateX(-50%)",
-              }}
+              className="absolute left-[46%] xs:left-[40%] bottom-[-9px] sm:bottom-[-17px] w-[44px] xs:w-[52px] sm:w-[115px] h-[50px] xs:h-[62px] sm:h-[132px] object-contain"
+              style={{ transform: "translateX(-50%)" }}
+            />
+
+            {/* Thêm 3 logo mới (-hd) cùng style/kích thước */}
+            <img
+              src="/logo-o8-hd.png"
+              alt="O8"
+              className="absolute right-[-10px] sm:right-[-19px] top-[16px] sm:top-[54px] w-[50px] xs:w-[60px] sm:w-[131px] h-[56px] xs:h-[70px] sm:h-[150px] object-contain"
+            />
+            <img
+              src="/logo-llwin-hd.png"
+              alt="LLWIN"
+              className="absolute right-[-12px] sm:right-[-24px] bottom-[20%] sm:bottom-[22%] w-[50px] xs:w-[60px] sm:w-[131px] h-[56px] xs:h-[70px] sm:h-[150px] object-contain"
+            />
+            <img
+              src="/logo-gg88-hd.png"
+              alt="GG88"
+              className="absolute left-1/2 top-[-16px] sm:top-[-28px] w-[50px] xs:w-[60px] sm:w-[131px] h-[56px] xs:h-[70px] sm:h-[150px] object-contain"
+              style={{ transform: "translateX(-50%)" }}
             />
           </div>
         </div>
@@ -333,6 +355,21 @@ function PartnersSection() {
             src="/mm88-active.webp"
             alt="MM88 Active"
             className="w-[70px] h-[70px] md:w-[88px] md:h-[88px] object-contain rounded-full shadow-lg border-4 border-[rgba(251,92,114,0.14)] bg-white"
+          />
+          <img
+            src="/logo-llwin.png"
+            alt="LLWIN"
+            className="w-[70px] h-[70px] md:w-[88px] md:h-[88px] object-contain rounded-full shadow-lg border-4 border-[rgba(56,174,255,0.09)] bg-white"
+          />
+          <img
+            src="/logo-o8.png"
+            alt="O8"
+            className="w-[70px] h-[70px] md:w-[88px] md:h-[88px] object-contain rounded-full shadow-lg border-4 border-[rgba(56,174,255,0.09)] bg-white"
+          />
+          <img
+            src="/logo-gg88-hd.png"
+            alt="GG88"
+            className="w-[70px] h-[70px] md:w-[88px] md:h-[88px] object-contain rounded-full shadow-lg border-4 border-[rgba(56,174,255,0.09)] bg-white"
           />
         </div>
       </div>

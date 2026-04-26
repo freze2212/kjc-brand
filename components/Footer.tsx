@@ -32,6 +32,11 @@ const Footer: React.FC = () => {
       image: "/logo-o8.png",
       name: "O8",
     },
+    {
+      id: "llwin",
+      image: "/logo-llwin.png",
+      name: "LLWIN",
+    },
   ];
 
   return (
